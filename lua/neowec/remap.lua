@@ -82,3 +82,6 @@ vim.keymap.set("n", "<leader>qq", vim.cmd.quit)
 vim.keymap.set("n", "<leader>no", vim.cmd.nohl)
 --			UNDOTREE
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+
+--			MAKE
+vim.keymap.set("n", "<leader>m", vim.cmd.make)
