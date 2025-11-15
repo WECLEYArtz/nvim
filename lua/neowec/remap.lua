@@ -58,7 +58,12 @@ vim.keymap.set("n", "<leader>wN", "<C-W>J")
 vim.keymap.set("n", "<leader>wE", "<C-W>K")
 vim.keymap.set("n", "<leader>wI", "<C-W>L")
 vim.keymap.set("n", "<leader>wH", "<C-W>H")
-vim.keymap.set("n", "<leader>wo", vim.cmd.only)
+
+--			WINDOWS JUMPS
+vim.keymap.set("n","<leader>1", "<Cmd>1wincmd w<CR>")
+vim.keymap.set("n","<leader>2", "<Cmd>2wincmd w<CR>")
+vim.keymap.set("n","<leader>3", "<Cmd>3wincmd w<CR>")
+vim.keymap.set("n","<leader>4", "<Cmd>4wincmd w<CR>")
 
 --			SPLIT
 vim.keymap.set("n", "<leader>wsv", vim.cmd.vsplit)
