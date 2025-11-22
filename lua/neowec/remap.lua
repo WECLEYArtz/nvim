@@ -60,10 +60,10 @@ vim.keymap.set("n", "<leader>wI", "<C-W>L")
 vim.keymap.set("n", "<leader>wH", "<C-W>H")
 
 --			WINDOWS JUMPS
-vim.keymap.set("n","<leader>1", "<Cmd>1wincmd w<CR>")
-vim.keymap.set("n","<leader>2", "<Cmd>2wincmd w<CR>")
-vim.keymap.set("n","<leader>3", "<Cmd>3wincmd w<CR>")
-vim.keymap.set("n","<leader>4", "<Cmd>4wincmd w<CR>")
+vim.keymap.set("n","<leader>1", function() vim.cmd("1wincmd w"); end)
+vim.keymap.set("n","<leader>2", function() vim.cmd("2wincmd w"); end)
+vim.keymap.set("n","<leader>3", function() vim.cmd("3wincmd w"); end)
+vim.keymap.set("n","<leader>4", function() vim.cmd("4wincmd w"); end)
 
 --			SPLIT
 vim.keymap.set("n", "<leader>wsv", vim.cmd.vsplit)
@@ -89,4 +89,4 @@ vim.keymap.set("n", "<leader>no", vim.cmd.nohl)
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 --			MAKE
-vim.keymap.set("n", "<leader>m", vim.cmd.make)
+vim.keymap.set("n", "<leader>m", function () vim.cmd("write | make") end)
