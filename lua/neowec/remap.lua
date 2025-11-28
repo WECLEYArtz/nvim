@@ -90,3 +90,4 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 --			MAKE
 vim.keymap.set("n", "<leader>m", function () vim.cmd("write | make") end)
+vim.keymap.set("t", "<Esc>" ,"<C-\\><C-n>")
