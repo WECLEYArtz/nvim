@@ -35,11 +35,9 @@ ArrowsToggle() -- Toggle arrows to true;
 vim.keymap.set("n", "<leader>e", "<Cmd>Neotree reveal_force_cwd<CR>")
 --			DASH_BOARD
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
+
 --			TABS (abandoned in favor of BUFFERS)
--- vim.keymap.set({ "n" }, "<leader>nt", vim.cmd.tabnew)
--- vim.keymap.set({ "n" }, "<leader>xt", vim.cmd.tabclose)
--- vim.keymap.set({ "n" }, "<leader>t", vim.cmd.tabnext)
--- vim.keymap.set({ "n" }, "<leader>T", vim.cmd.tabprevious)
+vim.keymap.set({ "n" }, "<leader>t", vim.cmd.terminal)
 
 --			BUFFERS
 vim.keymap.set({ "n" }, "<tab>", vim.cmd.bnext)
