@@ -33,11 +33,14 @@ ArrowsToggle() -- Toggle arrows to true;
 
 --			FILES EXPLORER
 vim.keymap.set("n", "<leader>e", "<Cmd>Neotree reveal_force_cwd<CR>")
+
 --			DASH_BOARD
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
 
---			TABS (abandoned in favor of BUFFERS)
+--			SPAWN TERMINAL
 vim.keymap.set({ "n" }, "<leader>t", vim.cmd.terminal)
+vim.keymap.set("t", "<Esc>" ,"<C-\\><C-n>")
+vim.keymap.set("t", "<leader>x" ,"<C-\\><C-n>")
 
 --			BUFFERS
 vim.keymap.set({ "n" }, "<tab>", vim.cmd.bnext)
@@ -47,15 +50,17 @@ vim.keymap.set("n", "<leader>wn", "<C-W>j")
 vim.keymap.set("n", "<leader>we", "<C-W>k")
 vim.keymap.set("n", "<leader>wi", "<C-W>l")
 vim.keymap.set("n", "<leader>wh", "<C-W>h")
-vim.keymap.set("n", "<leader>wo", vim.cmd.only)
 
---			new WINDOWS MOTION
-vim.keymap.set("n", "<leader>wt", "<C-W>T") --move window to new tab, damn so good.
-vim.keymap.set("n", "<leader>nw", "<C-W><C-N>")
 vim.keymap.set("n", "<leader>wN", "<C-W>J")
 vim.keymap.set("n", "<leader>wE", "<C-W>K")
 vim.keymap.set("n", "<leader>wI", "<C-W>L")
 vim.keymap.set("n", "<leader>wH", "<C-W>H")
+
+vim.keymap.set("n", "<leader>wo", vim.cmd.only)
+
+--			WINDOWS ACTION
+vim.keymap.set("n", "<leader>wt", "<C-W>T") --move window to new tab, damn so good.
+vim.keymap.set("n", "<leader>nw", "<C-W><C-N>")
 
 --			WINDOWS JUMPS
 vim.keymap.set("n","<leader>1", function() vim.cmd("1wincmd w"); end)
@@ -88,4 +93,3 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 --			MAKE
 vim.keymap.set("n", "<leader>m", function () vim.cmd("write | make") end)
-vim.keymap.set("t", "<Esc>" ,"<C-\\><C-n>")
