@@ -31,6 +31,14 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 ArrowsToggle() -- Toggle arrows to true;
 
+--			Change Directory
+vim.keymap.set("n", "<leader>cp", function()
+	vim.fn.setreg("+", vim.fn.expand("%:p:h"))
+	vim.notify("Copied path")
+end)
+--			CoPy Directory
+vim.keymap.set("n", "<leader>cd", "<Cmd>cd %:h<CR>")
+
 --			FILES EXPLORER
 vim.keymap.set("n", "<leader>e", "<Cmd>Neotree reveal_force_cwd<CR>")
 
@@ -39,12 +47,13 @@ vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
 
 --			SPAWN TERMINAL
 vim.keymap.set({ "n" }, "<leader>t", vim.cmd.terminal)
-vim.keymap.set("t", "<Esc>" ,"<C-\\><C-n>")
-vim.keymap.set("t", "<leader>x" ,"<C-\\><C-n>")
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+vim.keymap.set("t", "<leader>x", "<C-\\><C-n>")
 
 --			BUFFERS
 vim.keymap.set({ "n" }, "<tab>", vim.cmd.bnext)
 vim.keymap.set({ "n" }, "<S-tab>", vim.cmd.bprevious)
+
 --			WINDOWS MOTION
 vim.keymap.set("n", "<leader>wn", "<C-W>j")
 vim.keymap.set("n", "<leader>we", "<C-W>k")
@@ -63,10 +72,18 @@ vim.keymap.set("n", "<leader>wt", "<C-W>T") --move window to new tab, damn so go
 vim.keymap.set("n", "<leader>nw", "<C-W><C-N>")
 
 --			WINDOWS JUMPS
-vim.keymap.set("n","<leader>1", function() vim.cmd("1wincmd w"); end)
-vim.keymap.set("n","<leader>2", function() vim.cmd("2wincmd w"); end)
-vim.keymap.set("n","<leader>3", function() vim.cmd("3wincmd w"); end)
-vim.keymap.set("n","<leader>4", function() vim.cmd("4wincmd w"); end)
+vim.keymap.set("n", "<leader>1", function()
+	vim.cmd("1wincmd w")
+end)
+vim.keymap.set("n", "<leader>2", function()
+	vim.cmd("2wincmd w")
+end)
+vim.keymap.set("n", "<leader>3", function()
+	vim.cmd("3wincmd w")
+end)
+vim.keymap.set("n", "<leader>4", function()
+	vim.cmd("4wincmd w")
+end)
 
 --			SPLIT
 vim.keymap.set("n", "<leader>wsv", vim.cmd.vsplit)
@@ -92,4 +109,6 @@ vim.keymap.set("n", "<leader>no", vim.cmd.nohl)
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 --			MAKE
-vim.keymap.set("n", "<leader>m", function () vim.cmd("write | make") end)
+vim.keymap.set("n", "<leader>m", function()
+	vim.cmd("write | make")
+end)
