@@ -36,8 +36,14 @@ vim.keymap.set("n", "<leader>cp", function()
 	vim.fn.setreg("+", vim.fn.expand("%:p:h"))
 	vim.notify("Copied path")
 end)
---			CoPy Directory
+
+--			COPY DIRECTORY
 vim.keymap.set("n", "<leader>cd", "<Cmd>cd %:h<CR>")
+
+--			BETTER FOLDS
+vim.keymap.set("n", "d<BS>", "zd")
+vim.keymap.set("n", "<BS>", "za")
+vim.keymap.set("v", "<BS>", "zf")
 
 --			FILES EXPLORER
 vim.keymap.set("n", "<leader>e", "<Cmd>Neotree reveal_force_cwd<CR>")
