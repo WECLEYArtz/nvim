@@ -75,7 +75,7 @@ return {
 				lsp = {
 					score_offset = 1000,
 				},
-			},
+			}
 		},
 		signature = {
 			enabled = true,

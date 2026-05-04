@@ -21,6 +21,7 @@ require("lazy").setup({
 		{ import = "plugins" },
 		{ import = "plugins/lsp-pack" },
 		{ import = "plugins/themeing-pack" },
+		{ import = "plugins/dap-pack" }
 	},
 	-- ui = {
 	-- 	-- border = "single",
