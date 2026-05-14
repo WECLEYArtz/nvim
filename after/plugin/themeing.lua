@@ -1,6 +1,6 @@
 vim.g.neovide_opacity = 0.9
 -- vim.cmd("colorscheme no-clown-fiesta")
-vim.cmd("colorscheme nightfox")
+-- vim.cmd("colorscheme nightfox")
 
 local dark = "#020202"
 -- local nc = "#0a0a0a"
