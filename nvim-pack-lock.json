@@ -4,9 +4,22 @@
       "rev": "6c6a89d5b068b5251c8bdf0dd57bb921bcfeeb09",
       "src": "https://github.com/goolord/alpha-nvim"
     },
+    "blink.cmp": {
+      "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "'v1'"
+    },
+    "bufferline.nvim": {
+      "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
+      "src": "https://github.com/akinsho/bufferline.nvim"
+    },
     "c_formatter_42.vim": {
       "rev": "7a2d50f6683d6f58a2c95375524b4406d6bdc2c3",
       "src": "https://github.com/cacharle/c_formatter_42.vim"
+    },
+    "conform.nvim": {
+      "rev": "18aeab3d63d350dcf44d64c462cc489a3412af40",
+      "src": "https://github.com/stevearc/conform.nvim"
     },
     "cord.nvim": {
       "rev": "0be090969e978f7442870ef227e09eff7bf3480d",
@@ -16,6 +29,10 @@
       "rev": "889e2e96edef4e144965571d46f7a77bcc4d0ddf",
       "src": "https://github.com/j-hui/fidget.nvim"
     },
+    "friendly-snippets": {
+      "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
+      "src": "https://github.com/rafamadriz/friendly-snippets"
+    },
     "ftcountline.nvim": {
       "rev": "1f7b4ece81013df259f66ac9025c95df2083d3c8",
       "src": "https://github.com/kporceil/ftcountline.nvim"
@@ -23,6 +40,10 @@
     "indentmini.nvim": {
       "rev": "38572ce5a7a064a5deb89d6d861b7c40fc929ab1",
       "src": "https://github.com/nvimdev/indentmini.nvim"
+    },
+    "lualine.nvim": {
+      "rev": "131a558e13f9f28b15cd235557150ccb23f89286",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mason-lspconfig.nvim": {
       "rev": "eaa34887d444cb002e1b165fac399ae4bbc771f7",
@@ -43,6 +64,10 @@
     "neo-tree.nvim": {
       "rev": "ff84e6e1608b24773f1b73cd4182e0bcf2b3d637",
       "src": "https://github.com/nvim-neo-tree/neo-tree.nvim"
+    },
+    "nightfox.nvim": {
+      "rev": "26b61b1f856ec37cae3cb64f5690adb955f246a1",
+      "src": "https://github.com/EdenEast/nightfox.nvim"
     },
     "nui.nvim": {
       "rev": "de740991c12411b663994b2860f1a4fd0937c130",
@@ -76,6 +101,10 @@
     "undotree": {
       "rev": "6fa6b57cda8459e1e4b2ca34df702f55242f4e4d",
       "src": "https://github.com/mbbill/undotree"
+    },
+    "vimade": {
+      "rev": "9b2eacd9c97c0bb547f6f3a27e8b5b7a70ad4d03",
+      "src": "https://github.com/TaDaa/vimade"
     }
   }
 }
