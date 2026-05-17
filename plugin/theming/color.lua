@@ -1,6 +1,27 @@
-vim.g.neovide_opacity = 0.9
--- vim.cmd("colorscheme no-clown-fiesta")
+vim.pack.add({"https://github.com/EdenEast/nightfox.nvim"})
+require("nightfox").setup({
+	options = {
+		compile_file_suffix = "_compiled",
+		terminal_colors = true,
+		dim_inactive = false,
+
+		styles = {
+			comments = "NONE",
+			conditionals = "NONE",
+			constants = "NONE",
+			functions = "NONE",
+			keywords = "NONE",
+			numbers = "NONE",
+			operators = "NONE",
+			strings = "NONE",
+			types = "NONE",
+			variables = "NONE",
+		},
+	},
+})
+
 vim.cmd("colorscheme nightfox")
+vim.g.neovide_opacity = 0.9
 
 local dark = "#020202"
 -- local nc = "#0a0a0a"

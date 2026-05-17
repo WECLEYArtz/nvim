@@ -1,3 +1,2 @@
-require("neowec.remap")
-require("neowec.options")
-require("neowec.lazy")
+require("remap")
+require("options")
