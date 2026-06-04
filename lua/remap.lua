@@ -31,13 +31,13 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 ArrowsToggle() -- Toggle arrows to true;
 
---			Change Directory
+--			COPY DIRECTORY
 vim.keymap.set("n", "<leader>cp", function()
 	vim.fn.setreg("+", vim.fn.expand("%:p:h"))
 	vim.notify("Copied path")
 end)
 
---			COPY DIRECTORY
+--			Change Directory
 vim.keymap.set("n", "<leader>cd", "<Cmd>cd %:h<CR>")
 
 --			BETTER FOLDS
@@ -110,7 +110,8 @@ vim.keymap.set("n", "<leader>qq", vim.cmd.quit)
 -- vim.keymap.set("n", "<leader>Q", vim.cmd.quitall)
 
 --			NO HIGHLIGHT
-vim.keymap.set("n", "<leader>no", vim.cmd.nohl)
+vim.keymap.set("n", "<leader>x", vim.cmd.nohl)
+
 --			UNDOTREE
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
