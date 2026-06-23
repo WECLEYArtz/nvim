@@ -41,7 +41,7 @@ end)
 vim.keymap.set("n", "<leader>cd", "<Cmd>cd %:h<CR>")
 
 --			BETTER FOLDS
-vim.keymap.set("n", "d<BS>", "zd")
+-- vim.keymap.set("n", "d<BS>", "zd") //conflicting with telescope buffer
 vim.keymap.set("n", "<BS>", "za")
 vim.keymap.set("v", "<BS>", "zf")
 

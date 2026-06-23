@@ -47,3 +47,20 @@ vim.diagnostic.config({
 
 -- better pasting
 vim.api.nvim_set_keymap("c", "<sc-v>", "<C-R>0", { noremap = true })
+
+-- autosave in markdown
+vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI" }, {
+  pattern = "*.md",
+  callback = function()
+    if vim.bo.buftype == "" and not vim.bo.readonly then
+		vim.cmd("silent! write")
+    end
+  end
+})
+
+-- Auto-resize on terminal resize
+vim.api.nvim_create_autocmd('VimResized', {
+  callback = function()
+    vim.cmd('wincmd =')
+  end,
+})
