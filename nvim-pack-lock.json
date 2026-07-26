@@ -41,9 +41,17 @@
       "rev": "38572ce5a7a064a5deb89d6d861b7c40fc929ab1",
       "src": "https://github.com/nvimdev/indentmini.nvim"
     },
+    "live-preview.nvim": {
+      "rev": "5977060965161f7b3be3166467d03e09d10c68ea",
+      "src": "https://github.com/brianhuster/live-preview.nvim"
+    },
     "lualine.nvim": {
       "rev": "131a558e13f9f28b15cd235557150ccb23f89286",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
+    "markdown-preview.nvim": {
+      "rev": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee",
+      "src": "https://github.com/iamcco/markdown-preview.nvim"
     },
     "mason-lspconfig.nvim": {
       "rev": "eaa34887d444cb002e1b165fac399ae4bbc771f7",
@@ -68,6 +76,10 @@
     "nightfox.nvim": {
       "rev": "26b61b1f856ec37cae3cb64f5690adb955f246a1",
       "src": "https://github.com/EdenEast/nightfox.nvim"
+    },
+    "norminette42.nvim": {
+      "rev": "4f6448fb9812a2405e0b9c7880c914de08d4e9f9",
+      "src": "https://github.com/hardyrafael17/norminette42.nvim"
     },
     "nui.nvim": {
       "rev": "de740991c12411b663994b2860f1a4fd0937c130",
@@ -97,6 +109,10 @@
     "telescope.nvim": {
       "rev": "f04ab730b8f9c6bf3f54a206d0dcddfd70c52d59",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
+    },
+    "todo-comments.nvim": {
+      "rev": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668",
+      "src": "https://github.com/folke/todo-comments.nvim"
     },
     "undotree": {
       "rev": "6fa6b57cda8459e1e4b2ca34df702f55242f4e4d",

@@ -54,7 +54,7 @@ vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
 --			SPAWN TERMINAL
 vim.keymap.set({ "n" }, "<leader>t", vim.cmd.terminal)
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
-vim.keymap.set("t", "<leader>x", "<C-\\><C-n>")
+-- vim.keymap.set("t", "<leader>x", "<C-\\><C-n>")
 
 --			BUFFERS
 vim.keymap.set({ "n" }, "<tab>", vim.cmd.bnext)
@@ -94,6 +94,8 @@ end)
 --			SPLIT
 vim.keymap.set("n", "<leader>wsv", vim.cmd.vsplit)
 vim.keymap.set("n", "<leader>wsh", vim.cmd.split)
+--			C42Format
+vim.keymap.set("n", '<F2>', '<Cmd>CFormatter42<CR>')
 
 --			BETTER ESCAPE
 vim.keymap.set({ "n", "v", "i" }, "<leader>x", "<Esc>:lua ArrowsToggle(true)<CR>")
