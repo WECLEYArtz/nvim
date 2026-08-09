@@ -10,6 +10,7 @@ conform.setup({
 		javascript = { "prettierd", stop_after_first = true },
 		astro = { "prettier", stop_after_first = true },
 		asm = { "asmfmt" },
+		Makefile = { "mbake" },
 	},
 	format_after_save = {
 		timeout_ms = 2000,
