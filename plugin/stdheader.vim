@@ -72,18 +72,10 @@ function! s:line(n)
 	elseif a:n == 6 " author
 		return s:textline("By: " . s:user() . " <" . s:mail() . ">", s:ascii(a:n))
 	elseif a:n == 8 " created
-		return s:textline("Created: " . s:date() . " by " . s:user(), s:ascii(a:n))
+		return s:textline("Created: " . s:date() . " by " . "ahmounsi", s:ascii(a:n))
 	elseif a:n == 9 " updated
-		return s:textline("Updated: " . s:date() . " by " . s:user(), s:ascii(a:n))
+		return s:textline("Updated: " . s:date() . " by " . "ahmounsi", s:ascii(a:n))
 	endif
-endfunction
-
-function! s:user()
-	let l:user = $USER
-	if strlen(l:user) == 0
-		let l:user = "marvin"
-	endif
-	return l:user
 endfunction
 
 function! s:mail()
