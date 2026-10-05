@@ -5,7 +5,7 @@ conform.setup({
 	formatters_by_ft = {
 		-- cpp = { "clang-format" },
 		lua = { "stylua" },
-		-- python = { "isort", "black" },
+		python = { "black" },
 		-- rust = { "rustfmt", lsp_format = "fallback" },
 		javascript = { "prettierd", stop_after_first = true },
 		astro = { "prettier", stop_after_first = true },
