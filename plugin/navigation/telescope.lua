@@ -1,15 +1,11 @@
 vim.pack.add({"https://github.com/nvim-telescope/telescope.nvim"})
 
+
 local telescope = require("telescope")
-telescope.setup({
+local config = {
 	defaults = {
 		mappings = {
 			n = {
-				-- Colemak change
-				["n"] = require("telescope.actions").move_selection_next,
-				["d"] = require("telescope.actions").delete_buffer,
-				["e"] = require("telescope.actions").move_selection_previous,
-
 				-- Nice easy exit
 				["q"] = function(prompt_bufnr)
 					require("telescope.actions").close(prompt_bufnr)
@@ -36,9 +32,18 @@ telescope.setup({
 		},
 		colorscheme = { enable_preview = true },
 	},
-})
-local builtin = require("telescope.builtin")
+}
 
+if os.getenv("COLEMAK") then
+	config.defaults.mappings.n["n"] = require("telescope.actions").move_selection_next
+	config.defaults.mappings.n["d"] = require("telescope.actions").delete_buffer
+	config.defaults.mappings.n["e"] = require("telescope.actions").move_selection_previous
+end
+
+telescope.setup(config)
+
+
+local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
 vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Telescope diagnostics" })

@@ -5,7 +5,8 @@ vim.pack.add({
 	"https://github.com/MunifTanjim/nui.nvim",
 })
 
-require("neo-tree").setup({
+
+Config = {
 	event_handlers = {
 		{
 			event = "file_open_requested",
@@ -29,7 +30,6 @@ require("neo-tree").setup({
 	window = {
 		mappings = {
 			["="] = "toggle_auto_expand_width",
-			["e"] = "noop", -- allow colemak motion remap to work
 			["<space>"] = "noop", -- allow leader to work as toggle_node, still dont understand how it exactly works
 			["<leader>"] = "open",
 			["P"] = {
@@ -42,4 +42,10 @@ require("neo-tree").setup({
 			},
 		},
 	},
-})
+}
+
+if os.getenv("COLEMAK") then
+	Config.window.mappings["e"] = "noop"
+end
+
+require("neo-tree").setup(Config)
