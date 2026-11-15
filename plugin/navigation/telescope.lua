@@ -49,6 +49,5 @@ vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live gr
 vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Telescope diagnostics" })
 vim.keymap.set("n", "<leader>b", builtin.buffers, { desc = "Telescope buffers" })
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
-vim.keymap.set("n", "<leader>fc", builtin.colorscheme, { desc = "Telescope colorschemes" })
-vim.keymap.set("n", "<leader>fs", builtin.git_status, { desc = "Telescope git diffs" })
+vim.keymap.set("n", "<leader>fc", builtin.git_status, { desc = "Telescope git diffs" })
 vim.keymap.set("n", "<leader>ft", vim.cmd.TodoTelescope, { desc = "Telescope git diffs" })

@@ -40,7 +40,7 @@ theta.buttons.val = {
 			log("[Alpha]: Switched to Configurations directory  ")
 		end
 	end),
-	dashboard.button("m", "└─   remaping", "<cmd>e " .. config .. "/lua/neowec/remap.lua<CR>"),
+	dashboard.button("m", "└─   remaping", "<cmd>e " .. config .. "/lua/remap.lua<CR>"),
 	dashboard.button("u", "  Update plugins", "<cmd>Lazy sync<CR>"),
 	dashboard.button("q", "󰅚  Quit", "<cmd>qa<CR>"),
 }

@@ -1,8 +1,10 @@
 vim.pack.add({
 	{src = 'https://github.com/saghen/blink.cmp', version = "v1"}
 })
+local cmp = require("blink.cmp")
 
-require("blink.cmp").setup({
+
+cmp.setup({
 	keymap = {
 		preset = "default",
 
@@ -76,5 +78,10 @@ require("blink.cmp").setup({
 	signature = {
 		enabled = true,
 	},
-	fuzzy = { implementation = "prefer_rust_with_warning" }
+	fuzzy = {
+		implementation = "prefer_rust" ,
+		-- prebuilt_binaries = {
+		-- 	force_version = true
+		-- }
+	}
 })
